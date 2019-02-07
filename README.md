@@ -1,1 +1,6 @@
-# usairports.github.io
+## Map of United States Airports:
+
+By Connor Anderson
+
+This project is meant to produce an interactive choropleth web map of airports in the United States. Airplane icons represent all US airports and vary between 2 color options. The airplane icon color shows if a specified airport has an air traffic control tower. The viewer can also click on each marker to retrieve a popup window containing the airport’s name and control tower status (Y or N). When cross-referenced with the legend, the color gradient of the states represents the density of airports within a state’s boundaries (darker means more airports). The map contains essential elements like a legend (upper right), a zoom tool (upper left), a scale bar (lower left), and credits (lower right).
+Two different geojson files make up the airport and US state boundary data. The airport data (airports.geojson) was converted from a shapefile provided by Data.gov (https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile) and classifies each airport with the name, coordinates, and whether it has a control tower.  The airplane icon, from font awesome, appropriately represent all airports in the US. The state boundary data (us-states.geojson), provided by Mike Bostock of D3, contains all US boundaries along with the number of airports present within each state (used for choropleth portion). The base map is provided by CartoDB.
